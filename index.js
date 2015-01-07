@@ -41,7 +41,7 @@ function getPhrase(callback) {
 	inquirer.prompt([{
 		type: 'list',
 		choices: phrases,
-		message: 'Choose a pack:',
+		message: 'Choose a phrase:',
 		name: 'phrase'
 	}], function(phraseAnswers) {
 
