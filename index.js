@@ -88,7 +88,7 @@ function addUser(callback) {
 			return user.toUpperCase();
 		},
 		validate: function(user) {
-			return user && user.length > 0;
+			return user && user.length > 0 && user.toUpperCase() != 'USERS';
 		}
 	}], function(answers) {
 
@@ -159,21 +159,25 @@ function getUser(callback) {
 
 function deleteUser(user, callback) {
 
-	db.get('users', function(err, users) {
+	db.del(user, function(err) {
 
-		if (err) {
-			return callback();
-		}
+		db.get('users', function(err, users) {
 
-		users = JSON.parse(users);
+			if (err) {
+				return callback();
+			}
 
-		if (users[user]) {
-			delete users[user];
-		}
+			users = JSON.parse(users);
 
-		db.put('users', JSON.stringify(users), function(err) {
+			if (users[user]) {
+				delete users[user];
+			}
 
-			return callback();
+			db.put('users', JSON.stringify(users), function(err) {
+
+				return callback();
+
+			});
 
 		});
 
@@ -183,9 +187,9 @@ function deleteUser(user, callback) {
 
 function getPayload(user, callback) {
 
-	inquirer.prompt([{
-		type: 'list',
-		choices: [
+	db.get(user, function(err, lastPhrase) {
+
+		var choices = [
 			{
 				name: 'Packs',
 				value: 'packs'
@@ -195,46 +199,110 @@ function getPayload(user, callback) {
 				value: 'phrases'
 			},
 			{
+				name: 'ALL THE B*TCHES',
+				value: 'all'
+			},
+			{
 				name: 'Remove ' + user,
 				value: 'delete'
 			}
-		],
-		message: 'Yo B*TCH!',
-		name: 'action'
+		];
+
+		if (!err && lastPhrase) {
+
+			lastPhrase = JSON.parse(lastPhrase);
+
+			var choice = {
+				name: lastPhrase.message,
+				value: lastPhrase
+			};
+
+			choices.unshift(choice);			
+
+		}
+
+		inquirer.prompt([{
+			type: 'list',
+			choices: choices,
+			message: 'Yo B*TCH!',
+			name: 'action'
+		}], function(answers) {
+
+			var phraseCallback = function(phrase) {
+
+				inquirer.prompt([{
+					type: 'input',
+					message: 'Message',
+					default: phrase.message,
+					name: 'message',
+					filter: function(message) {
+
+						if (message != phrase.message) {
+							return message.toUpperCase() + ', B*TCH!';					
+						}
+
+						return message;
+
+					}
+				}], function(answers) {
+
+					callback(phrase, answers.message);
+
+				});
+
+			};
+
+			if (answers.action === 'packs') {
+				getPhraseByPack(phraseCallback);
+			} else if (answers.action === 'phrases') {
+				getPhrase(phraseCallback);
+			} else if (answers.action === 'delete') {
+				deleteUser(user, function() {
+					console.log(user + ' removed.');
+				});
+			} else if (answers.action === 'all') {
+				sendAllTheBitches(user);
+			} else if (_.isObject(answers.action)) {
+				phraseCallback(answers.action);
+			}
+
+		});		
+
+	});
+
+}
+
+function sendAllTheBitches(user) {
+
+	var phraseQueue = _.cloneDeep(phrases);
+
+	inquirer.prompt([{
+		type: 'confirm',
+		message: 'Whoa B*TCH, this will send ' + phraseQueue.length + ' different phrases to ' + user + '! Are you sure?',
+		name: 'confirm',
+		default: false
 	}], function(answers) {
 
-		var phraseCallback = function(phrase) {
+		if (answers.confirm) {
 
-			inquirer.prompt([{
-				type: 'input',
-				message: 'Message',
-				default: phrase.message,
-				name: 'message',
-				filter: function(message) {
+			var loop = function() {
 
-					if (message != phrase.message) {
-						return message.toUpperCase() + ', B*TCH!';					
+				var phrase = phraseQueue.shift();
+				console.log(phrase.value.message);
+				sendMessage(user, phrase.value, function() {
+
+					if (phraseQueue.length > 0) {
+						var interval = setTimeout(loop, 1000);	
+					} else {
+						console.log(chalk.bold.green('ALL DONE, B*TCH!'));
 					}
 
-					return message;
+				});
 
-				}
-			}], function(answers) {
+			};
 
-				callback(phrase, answers.message);
+			loop();
 
-			});
-
-		};
-
-		if (answers.action === 'packs') {
-			getPhraseByPack(phraseCallback);
-		} else if (answers.action === 'phrases') {
-			getPhrase(phraseCallback);
-		} else if (answers.action === 'delete') {
-			deleteUser(user, function() {
-				console.log(user + ' removed.');
-			});
 		}
 
 	});
@@ -242,6 +310,11 @@ function getPayload(user, callback) {
 }
 
 function sendMessage(user, phrase, message, callback) {
+
+	if (_.isFunction(message)) {
+		callback = message;
+		message = phrase.message;
+	}
 
 	request({
 		method: 'POST',
@@ -300,29 +373,35 @@ module.exports = function() {
 
 				console.log(chalk.bold.green('Message sent!'));
 
-				db.get('users', function(err, users) {
+				// Store the last used phrase
+				db.put(user, JSON.stringify(phrase), function(err) {
 
-					if (err) {
+					// Add/update the user list
+					db.get('users', function(err, users) {
 
-						var lookup = {};
-						lookup[user] = 1;
+						if (err) {
 
-						db.put('users', JSON.stringify(lookup), function(err) {
-							// All done!
-						});
-						return;
+							var lookup = {};
+							lookup[user] = 1;
 
-					}
+							db.put('users', JSON.stringify(lookup), function(err) {
+								// All done!
+							});
+							return;
 
-					users = JSON.parse(users);
+						}
 
-					if (users[user]) {
-						users[user] += 1;
-					} else {
-						users[user] = 1;					
-					}
+						users = JSON.parse(users);
 
-					db.put('users', JSON.stringify(users));
+						if (users[user]) {
+							users[user] += 1;
+						} else {
+							users[user] = 1;					
+						}
+
+						db.put('users', JSON.stringify(users));
+
+					});
 
 				});
 
