@@ -287,43 +287,47 @@ function sendMessage(user, phrase, message, callback) {
 
 }
 
-getUser(function(user) {
-	getPayload(user, function(phrase, message) {
-		sendMessage(user, phrase, message, function(err, response) {
+module.exports = function() {
 
-			if (err) {
-				console.log(chalk.bold.red('There was an error sending your message.'));
-				return;
-			}
-
-			console.log(chalk.bold.green('Message sent!'));
-
-			db.get('users', function(err, users) {
+	getUser(function(user) {
+		getPayload(user, function(phrase, message) {
+			sendMessage(user, phrase, message, function(err, response) {
 
 				if (err) {
-
-					var lookup = {};
-					lookup[user] = 1;
-
-					db.put('users', JSON.stringify(lookup), function(err) {
-						// All done!
-					});
+					console.log(chalk.bold.red('There was an error sending your message.'));
 					return;
-
 				}
 
-				users = JSON.parse(users);
+				console.log(chalk.bold.green('Message sent!'));
 
-				if (users[user]) {
-					users[user] += 1;
-				} else {
-					users[user] = 1;					
-				}
+				db.get('users', function(err, users) {
 
-				db.put('users', JSON.stringify(users));
+					if (err) {
+
+						var lookup = {};
+						lookup[user] = 1;
+
+						db.put('users', JSON.stringify(lookup), function(err) {
+							// All done!
+						});
+						return;
+
+					}
+
+					users = JSON.parse(users);
+
+					if (users[user]) {
+						users[user] += 1;
+					} else {
+						users[user] = 1;					
+					}
+
+					db.put('users', JSON.stringify(users));
+
+				});
 
 			});
-
 		});
 	});
-});
+
+};
