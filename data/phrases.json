@@ -1,0 +1,812 @@
+{
+  "Phrase Packs": [
+    {
+      "appearAsFree": true,
+      "name": "YO PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.free",
+      "phrases": [
+        {
+          "message": "YO, B*TCH!",
+          "sound": "free_yo-bitch-MAIN.caf"
+        },
+        {
+          "message": "YO, B*TCH! (ANNOYED)",
+          "sound": "free_yo-bitch-annoyed.caf"
+        },
+        {
+          "message": "YO, B*TCH! (EXCITED)",
+          "sound": "free_yo-bitch-excited.caf"
+        },
+        {
+          "message": "YO, B*TCH! (WHISPER)",
+          "sound": "free_yo-bitch-whisper.caf"
+        }
+      ],
+      "description": "They say the best things in life are free. Well here’s a good example. Enjoy these 4 different ways you can ‘Yo B*tch’ your friends.\nYour friend, AP"
+    },
+    {
+      "appearAsFree": true,
+      "name": "Holiday Pack",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.holiday",
+      "phrases": [
+        {
+          "message": "APRIL FOOLS, B*TCH!",
+          "sound": "april-fools.caf"
+        },
+        {
+          "message": "EGG NOG, B*TCH!",
+          "sound": "egg-nog.caf"
+        },
+        {
+          "message": "FAT TUESDAY, B*TCH!",
+          "sound": "fat-tuesday.caf"
+        },
+        {
+          "message": "FELIZ NAVIDAD, B*TCH!",
+          "sound": "feliz-navidad.caf"
+        },
+        {
+          "message": "HAPPY CHRISTMAS EVE, B*TCH!",
+          "sound": "happy-christmas-eve.caf"
+        },
+        {
+          "message": "HAPPY EASTER, B*TCH!",
+          "sound": "happy-easter.caf"
+        },
+        {
+          "message": "HAPPY HALLOWEEN, B*TCH!",
+          "sound": "happy-halloween.caf"
+        },
+        {
+          "message": "HAPPY HANUKKAH, B*TCH!",
+          "sound": "happy-hanukkah.caf"
+        },
+        {
+          "message": "HAPPY HOLIDAYS, B*TCH!",
+          "sound": "happy-holidays.caf"
+        },
+        {
+          "message": "HAPPY KWANZAA, B*TCH!",
+          "sound": "happy-kwanzaa.caf"
+        },
+        {
+          "message": "HAPPY NEW YEAR, B*TCH!",
+          "sound": "happy-new-year.caf"
+        },
+        {
+          "message": "HAPPY THANKSGIVING, B*TCH!",
+          "sound": "happy-thanksgiving.caf"
+        },
+        {
+          "message": "HO HO HO, B*TCH!",
+          "sound": "ho-ho-ho.caf"
+        },
+        {
+          "message": "HO HO HO, B*TCH! (SHATNER)",
+          "sound": "ho-ho-ho-shatner.caf"
+        },
+        {
+          "message": "I’M SANTA, B*TCH!",
+          "sound": "im-santa.caf"
+        },
+        {
+          "message": "MERRY CHRISTMAS, B*TCH!",
+          "sound": "merry-christmas.caf"
+        },
+        {
+          "message": "MERRY XMAS, B*TCH!",
+          "sound": "merry-xmas.caf"
+        },
+        {
+          "message": "SEASONS GREETINGS, B*TCH!",
+          "sound": "seasons-grettings.caf"
+        }
+      ],
+      "description": "I love to spread cheer on holidays, and I want you to do the same. That is why I am giving you this pack for free. Just remember to use it.\nYour friend, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "GREETINGS PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.one",
+      "phrases": [
+        {
+          "message": "ALOHA, B*TCH!",
+          "sound": "aloha.caf"
+        },
+        {
+          "message": "BIENVENIDOS, B*TCH!",
+          "sound": "bienvenidos.caf"
+        },
+        {
+          "message": "BONJOUR, B*TCH!",
+          "sound": "greetings1_bonjour-bitch.caf"
+        },
+        {
+          "message": "BONJOURNO, B*TCH!",
+          "sound": "bonjourno.caf"
+        },
+        {
+          "message": "CHEERIO, B*TCH!",
+          "sound": "cheerio.caf"
+        },
+        {
+          "message": "GUTEN TAG, B*TCH!",
+          "sound": "guten-tag.caf"
+        },
+        {
+          "message": "HALLO, B*TCH!",
+          "sound": "hallo.caf"
+        },
+        {
+          "message": "HELLO, B*TCH!",
+          "sound": "greetings1_hello-bitch.caf"
+        },
+        {
+          "message": "HEY, B*TCH!",
+          "sound": "greetings1_hey-bitch.caf"
+        },
+        {
+          "message": "HEY, YO, B*TCH!",
+          "sound": "greetings1_hey-yo-bitch.caf"
+        },
+        {
+          "message": "HIYA, B*TCH!",
+          "sound": "greetings1_hiya-bitch.caf"
+        },
+        {
+          "message": "HOWDY, B*TCH!",
+          "sound": "greetings1_howdy-bitch.caf"
+        },
+        {
+          "message": "KONNICHI WA, B*TCH!",
+          "sound": "konnichi-wa.caf"
+        },
+        {
+          "message": "MOSHI MOSHI, B*TCH!",
+          "sound": "moshi-moshi.caf"
+        },
+        {
+          "message": "NAMASTE, B*TCH!",
+          "sound": "namaste.caf"
+        },
+        {
+          "message": "NI HAO, B*TCH!",
+          "sound": "ni-hao.caf"
+        },
+        {
+          "message": "SALUTATIONS, B*TCH!",
+          "sound": "greetings1_salutations-bitch.caf"
+        },
+        {
+          "message": "SUP? B*TCH!",
+          "sound": "greetings1_sup-bitch.caf"
+        },
+        {
+          "message": "WELCOME, B*TCH!",
+          "sound": "greetings1_welcome-bitch.caf"
+        }
+      ],
+      "description": "Here's a bouquet of different ways to say ‘hello’, French included! Look how worldly you are!\nEnjoy, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "DAILY PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.two",
+      "phrases": [
+        {
+          "message": "BUENOS DIAS, B*TCH!",
+          "sound": "greetings2_buenos-dias-bitch.caf"
+        },
+        {
+          "message": "BUENAS NOCHES, B*TCH!",
+          "sound": "greetings2_buenas-noches-bitch.caf"
+        },
+        {
+          "message": "BUENAS TARDES, B*TCH!",
+          "sound": "greetings2_buenas-tardes-bitch.caf"
+        },
+        {
+          "message": "BUENO, B*TCH!",
+          "sound": "greetings2_bueno-bitch.caf"
+        },
+        {
+          "message": "BYE, B*TCH!",
+          "sound": "bye.caf"
+        },
+        {
+          "message": "GOOD AFTERNOON, B*TCH!",
+          "sound": "greetings2_good-afternoon-bitch.caf"
+        },
+        {
+          "message": "GOOD EVENING, B*TCH!",
+          "sound": "greetings2_good-evening-bitch.caf"
+        },
+        {
+          "message": "GOOD MORNING, B*TCH!",
+          "sound": "greetings2_good-morning-bitch.caf"
+        },
+        {
+          "message": "HOLA, B*TCH!",
+          "sound": "greetings2_hola-bitch.caf"
+        },
+        {
+          "message": "LISTEN, B*TCH!",
+          "sound": "listen.caf"
+        },
+        {
+          "message": "PLEASE, B*TCH!",
+          "sound": "please.caf"
+        },
+        {
+          "message": "SHALOM, B*TCH!",
+          "sound": "greetings2_shalom-bitch.caf"
+        },
+        {
+          "message": "THANK YOU, B*TCH!",
+          "sound": "thank-you.caf"
+        },
+        {
+          "message": "THANKS, B*TCH!",
+          "sound": "thanks.caf"
+        },
+        {
+          "message": "WHATUP? B*TCH!",
+          "sound": "greetings2_whatup-bitch.caf"
+        }
+      ],
+      "description": "With this phrase pack, greet your friends at the beginning and end of every day, as well as some Spanish. Everyone loves Spanish.\nAdios, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "FOOD PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.food",
+      "phrases": [
+        {
+          "message": "BREAKFAST, B*TCH!",
+          "sound": "breakfast.caf"
+        },
+        {
+          "message": "BURGERS, B*TCH!",
+          "sound": "burgers.caf"
+        },
+        {
+          "message": "CHINESE, B*TCH!",
+          "sound": "chinese.caf"
+        },
+        {
+          "message": "COFFEE, B*TCH!",
+          "sound": "coffee.caf"
+        },
+        {
+          "message": "DINNER, B*TCH!",
+          "sound": "dinner-bitch.caf"
+        },
+        {
+          "message": "DRINKS, B*TCH!",
+          "sound": "drinks.caf"
+        },
+        {
+          "message": "FOOD, B*TCH!",
+          "sound": "food.caf"
+        },
+        {
+          "message": "I'M STARVING, B*TCH!",
+          "sound": "im-starving.caf"
+        },
+        {
+          "message": "I’M HUNGRY, B*TCH!",
+          "sound": "im-hungry.caf"
+        },
+        {
+          "message": "IT’S GLUTEN FREE, B*TCH!",
+          "sound": "its-gluten-free.caf"
+        },
+        {
+          "message": "LET’S EAT, B*TCH!",
+          "sound": "lets-eat.caf"
+        },
+        {
+          "message": "LUNCH, B*TCH!",
+          "sound": "lunch-bitch.caf"
+        },
+        {
+          "message": "PASTA, B*TCH!",
+          "sound": "pasta.caf"
+        },
+        {
+          "message": "SNACKS, B*TCH!",
+          "sound": "snacks.caf"
+        },
+        {
+          "message": "SUSHI, B*TCH!",
+          "sound": "sushi.caf"
+        },
+        {
+          "message": "TACOS, B*TCH!",
+          "sound": "tacos.caf"
+        },
+        {
+          "message": "TEA, B*TCH!",
+          "sound": "tea.caf"
+        }
+      ],
+      "description": "I've got you covered on everything food-related. Especially pizza. is there anything better than pizza?\nDig in, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "LIFE PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.life",
+      "phrases": [
+        {
+          "message": "ADD ME, B*TCH!",
+          "sound": "add-me.caf"
+        },
+        {
+          "message": "FOLLOW ME, B*TCH!",
+          "sound": "follow-me.caf"
+        },
+        {
+          "message": "GYM, B*TCH!",
+          "sound": "gym.caf"
+        },
+        {
+          "message": "HAPPY BIRTHDAY, B*TCH!",
+          "sound": "happy-birthday.caf"
+        },
+        {
+          "message": "I GOT YOU A PRESENT, B*TCH!",
+          "sound": "i-got-a-present-for-you.caf"
+        },
+        {
+          "message": "I NEED TO BATHE MYSELF, B*TCH!",
+          "sound": "i-need-to-bathe-myself.caf"
+        },
+        {
+          "message": "I'M LIFTING WEIGHTS, B*TCH!",
+          "sound": "im-lifting-weights.caf"
+        },
+        {
+          "message": "I’M IN THE BATH, B*TCH!",
+          "sound": "im-in-the-bath.caf"
+        },
+        {
+          "message": "LET'S GO OUT, B*TCH!",
+          "sound": "lets-go-out.caf"
+        },
+        {
+          "message": "LET'S HANG, B*TCH!",
+          "sound": "lets-hang.caf"
+        },
+        {
+          "message": "LET’S DO SOMETHING, B*TCH!",
+          "sound": "lets-do-something.caf"
+        },
+        {
+          "message": "PILATES, B*TCH!",
+          "sound": "pilates.caf"
+        },
+        {
+          "message": "TRAFFIC, B*TCH!",
+          "sound": "traffic.caf"
+        },
+        {
+          "message": "YOGA, B*TCH!",
+          "sound": "yoga.caf"
+        }
+      ],
+      "description": "Cut to the chase in your conversations with this pack. Life's too short for chit-chat.\nBest, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "SOCRATES PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.three",
+      "phrases": [
+        {
+          "message": "HOW? B*TCH!",
+          "sound": "greetings3_how-bitch.caf"
+        },
+        {
+          "message": "NOPE, B*TCH!",
+          "sound": "greetings3_nope-bitch.caf"
+        },
+        {
+          "message": "NOW, B*TCH!",
+          "sound": "greetings3_now-bitch.caf"
+        },
+        {
+          "message": "NUH-UH, B*TCH!",
+          "sound": "greetings3_nuh-uh-bitch.caf"
+        },
+        {
+          "message": "UH-UH, B*TCH!",
+          "sound": "greetings3_uh-uh-bitch.caf"
+        },
+        {
+          "message": "WHO? B*TCH!",
+          "sound": "greetings3_who-bitch.caf"
+        },
+        {
+          "message": "WHAT? B*TCH!",
+          "sound": "greetings3_what-bitch.caf"
+        },
+        {
+          "message": "WHERE? B*TCH!",
+          "sound": "greetings3_where-bitch.caf"
+        },
+        {
+          "message": "WHEN? B*TCH!",
+          "sound": "greetings3_when-bitch.caf"
+        },
+        {
+          "message": "WHY? B*TCH!",
+          "sound": "greetings3_why-bitch.caf"
+        },
+        {
+          "message": "YEP, B*TCH!",
+          "sound": "greetings3_yep-bitch.caf"
+        },
+        {
+          "message": "YES, B*TCH!",
+          "sound": "greetings3_yes-bitch.caf"
+        },
+        {
+          "message": "YOU MAD, B*TCH!",
+          "sound": "you-mad.caf"
+        },
+        {
+          "message": "YOU SERIOUS, B*TCH?",
+          "sound": "greetings3_you-serious-bitch.caf"
+        }
+      ],
+      "description": "Ask some questions and give some answers with this pack. \nYour amigo, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "RESPONSE PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.response",
+      "phrases": [
+        {
+          "message": "GENIUS, B*TCH!",
+          "sound": "genius.caf"
+        },
+        {
+          "message": "I AM SO DOWN, B*TCH!",
+          "sound": "i-am-so-down.caf"
+        },
+        {
+          "message": "I CAN’T, B*TCH!",
+          "sound": "i-cant.caf"
+        },
+        {
+          "message": "I CANT EVEN, B*TCH!",
+          "sound": "i-cant-even.caf"
+        },
+        {
+          "message": "I DON'T KNOW, B*TCH!",
+          "sound": "idontknow.caf"
+        },
+        {
+          "message": "I DON’T CARE, B*TCH!",
+          "sound": "i-dont-care.caf"
+        },
+        {
+          "message": "I WANT TO, B*TCH!",
+          "sound": "i-want-to.caf"
+        },
+        {
+          "message": "I'M HOME, B*TCH!",
+          "sound": "im-home.caf"
+        },
+        {
+          "message": "I'M OUT, B*TCH!",
+          "sound": "im-out.caf"
+        },
+        {
+          "message": "I’M BUSY, B*TCH!",
+          "sound": "im-busy.caf"
+        },
+        {
+          "message": "NAH, B*TCH!",
+          "sound": "nah.caf"
+        },
+        {
+          "message": "NOT GONNA HAPPEN, B*TCH!",
+          "sound": "not-gonna-happen.caf"
+        },
+        {
+          "message": "NOT GONNA MAKE IT, B*TCH!",
+          "sound": "not-gonna-make-it.caf"
+        },
+        {
+          "message": "OKAY, B*TCH!",
+          "sound": "okay.caf"
+        },
+        {
+          "message": "OKAY, B*TCH! (ANNOYED)",
+          "sound": "okay-annoyed.caf"
+        },
+        {
+          "message": "OKIE DOKIE, B*TCH!",
+          "sound": "okie-dokie.caf"
+        },
+        {
+          "message": "ON MY WAY, B*TCH!",
+          "sound": "on-my-way.caf"
+        },
+        {
+          "message": "YOU TOO, B*TCH!",
+          "sound": "you-too.caf"
+        },
+        {
+          "message": "YOU’RE LYING, B*TCH!",
+          "sound": "youre-lying.caf"
+        }
+      ],
+      "description": "Here's a great pack for keeping the conversation going on YB.\nHave fun, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "BUSINESS PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.business",
+      "phrases": [
+        {
+          "message": "ASAP, B*TCH!",
+          "sound": "asap.caf"
+        },
+        {
+          "message": "C.C. ME, B*TCH!",
+          "sound": "cc.caf"
+        },
+        {
+          "message": "CIRCLE BACK, B*TCH!",
+          "sound": "circle-back.caf"
+        },
+        {
+          "message": "CONFERENCE CALL, B*TCH!",
+          "sound": "conference-call.caf"
+        },
+        {
+          "message": "DIAL IN , B*TCH!",
+          "sound": "dial-in.caf"
+        },
+        {
+          "message": "FOLLOW UP, B*TCH!",
+          "sound": "follow-up.caf"
+        },
+        {
+          "message": "I’M WORKING, B*TCH!",
+          "sound": "im-working.caf"
+        },
+        {
+          "message": "MEETING, B*TCH!",
+          "sound": "meeting.caf"
+        },
+        {
+          "message": "NO CAN DO, B*TCH!",
+          "sound": "no-can-do.caf"
+        },
+        {
+          "message": "PLEASE CONFIRM, B*TCH!",
+          "sound": "please-confirm.caf"
+        },
+        {
+          "message": "REGARDS, B*TCH!",
+          "sound": "regards.caf"
+        },
+        {
+          "message": "SLIPPED MY MIND, B*TCH!",
+          "sound": "slipped-my-mind.caf"
+        },
+        {
+          "message": "SYNERGY, B*TCH!",
+          "sound": "synergy.caf"
+        },
+        {
+          "message": "THINK OUTSIDE THE BOX, B*TCH!",
+          "sound": "think-outside-the-box.caf"
+        },
+        {
+          "message": "WHAT’S YOUR ETA, B*TCH!",
+          "sound": "whats-your-eta.caf"
+        }
+      ],
+      "description": "Open the kimono on this pack to make your Mondays, Wednesdays, and basically any non-weekend-day better at your 9-5.\nKind regards, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "EXCLAMATA PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.four",
+      "phrases": [
+        {
+          "message": "BOO, B*TCH!",
+          "sound": "greetings4_boo-bitch.caf"
+        },
+        {
+          "message": "BOOHOO, B*TCH!",
+          "sound": "greetings4_boohoo-bitch.caf"
+        },
+        {
+          "message": "BOOYA, B*TCH!",
+          "sound": "greetings4_booya-bitch.caf"
+        },
+        {
+          "message": "DUH, B*TCH!",
+          "sound": "greetings4_duh-bitch.caf"
+        },
+        {
+          "message": "HAHA, B*TCH!",
+          "sound": "greetings4_haha-bitch.caf"
+        },
+        {
+          "message": "HOORAY, B*TCH!",
+          "sound": "greetings4_hooray-bitch.caf"
+        },
+        {
+          "message": "OUCH, B*TCH!",
+          "sound": "greetings4_ouch-bitch.caf"
+        },
+        {
+          "message": "DIDN’T HAPPEN, B*TCH!",
+          "sound": "didnt-happen.caf"
+        },
+        {
+          "message": "IMPRESSIVE, B*TCH!",
+          "sound": "impressive.caf"
+        },
+        {
+          "message": "IT’S OFFICIAL, B*TCH!",
+          "sound": "its-official.caf"
+        },
+        {
+          "message": "MAKE IT HAPPEN, B*TCH!",
+          "sound": "make-it-happen.caf"
+        },
+        {
+          "message": "OH MY GOD, B*TCH!",
+          "sound": "oh-my-god.caf"
+        },
+        {
+          "message": "SURPRISE, B*TCH!",
+          "sound": "surprise.caf"
+        },
+        {
+          "message": "WORK IT, B*TCH!",
+          "sound": "work-it.caf"
+        }
+      ],
+      "description": "Sometimes you need some exclamations to color your conversations. I got you covered. PS, ‘boo’ often comes in handy.\nAll the best, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "MORE IS MORE PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.five",
+      "phrases": [
+        {
+          "message": "COOL, B*TCH!",
+          "sound": "greetings5_cool-bitch.caf"
+        },
+        {
+          "message": "LATER, B*TCH!",
+          "sound": "greetings5_later-bitch.caf"
+        },
+        {
+          "message": "OOPS, B*TCH!",
+          "sound": "greetings5_oops-bitch.caf"
+        },
+        {
+          "message": "PSSST, B*TCH!",
+          "sound": "greetings5_pssst-bitch.caf"
+        },
+        {
+          "message": "STOP, B*TCH!",
+          "sound": "greetings5_stop-bitch.caf"
+        },
+        {
+          "message": "UGH, B*TCH!",
+          "sound": "greetings5_ugh-bitch.caf"
+        },
+        {
+          "message": "WHOA, B*TCH!",
+          "sound": "greetings5_whoa-bitch.caf"
+        },
+        {
+          "message": "WOW, B*TCH!",
+          "sound": "greetings5_wow-bitch.caf"
+        },
+        {
+          "message": "YOOO, B*TCH!",
+          "sound": "greetings5_yooo-extended-bitch.caf"
+        },
+        {
+          "message": "YUCK, B*TCH!",
+          "sound": "greetings5_yuck-bitch.caf"
+        },
+        {
+          "message": "YUMMY, B*TCH!",
+          "sound": "greetings5_yummy-bitch.caf"
+        },
+        {
+          "message": "YAWN, B*TCH!",
+          "sound": "yawn.caf"
+        },
+        {
+          "message": "SURE, B*TCH!",
+          "sound": "sure.caf"
+        }
+      ],
+      "description": "Some people say ‘less is more.’ Well I say ‘more is more.’ This pack contains some of my favorite stuff, including the extra-long “yooooo b*tch.”\nLove, AP"
+    },
+    {
+      "appearAsFree": false,
+      "name": "LOVE PACK",
+      "identifier": "com.maxandcodesign.yobitch.phrasepack.six",
+      "phrases": [
+        {
+          "message": "COME OVER, B*TCH!",
+          "sound": "greetings6_come-over-bitch.caf"
+        },
+        {
+          "message": "I LOVE YOU, B*TCH!",
+          "sound": "greetings6_i-love-you-bitch.caf"
+        },
+        {
+          "message": "I NEED YOU, B*TCH!",
+          "sound": "greetings6_i-need-you-bitch.caf"
+        },
+        {
+          "message": "I WANT YOU, B*TCH!",
+          "sound": "greetings6_i-want-you-bitch.caf"
+        },
+        {
+          "message": "WILL YOU MARRY ME, B*TCH?",
+          "sound": "greetings6_WYMM-bitch.caf"
+        },
+        {
+          "message": "CHEER UP, B*TCH!",
+          "sound": "cheer-up.caf"
+        },
+        {
+          "message": "FORGIVE ME, B*TCH!",
+          "sound": "forgiveme.caf"
+        },
+        {
+          "message": "I LIKE YOU, B*TCH!",
+          "sound": "i-like-you.caf"
+        },
+        {
+          "message": "I LIKE YOU, TOO, B*TCH!",
+          "sound": "i-like-you-too.caf"
+        },
+        {
+          "message": "I MISS YOU, B*TCH!",
+          "sound": "i-miss-you.caf"
+        },
+        {
+          "message": "I MISS YOU SO MUCH, B*TCH!",
+          "sound": "i-miss-you-so-much.caf"
+        },
+        {
+          "message": "I’M MAD AT YOU, B*TCH!",
+          "sound": "im-mad-at-you.caf"
+        },
+        {
+          "message": "YOU’RE HANDSOME, B*TCH!",
+          "sound": "youre-handsome.caf"
+        },
+        {
+          "message": "YOU HAVE A HANDSOME FACE, B*TCH!",
+          "sound": "you-have-a-handsome-face.caf"
+        },
+        {
+          "message": "YOU'RE REALLY CUTE, B*TCH!",
+          "sound": "youre-really-cute.caf"
+        },
+        {
+          "message": "YOU'RE SO HOT, B*TCH!",
+          "sound": "youre-so-hot.caf"
+        }
+      ],
+      "description": "What would this be if I didn’t have something for all the beautiful lovers out there. This one is for you. I see you. I got you.\nYours truly, AP"
+    }
+  ]
+}
