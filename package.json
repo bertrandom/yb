@@ -1,5 +1,5 @@
 {
-  "name": "yb-cli",
+  "name": "yb",
   "version": "1.0.0",
   "description": "Yo B*TCH on the CLI",
   "main": "index.js",
